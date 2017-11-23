@@ -1,0 +1,23 @@
+<snippet>
+	<description>Messenger 2.2 Media Template</description>
+	<content><![CDATA[
+"recipient":{
+  "id":"${1:<PSID>}"
+},
+"message":{
+  "attachment": {
+    "type": "template",
+    "payload": {
+       "template_type": "media",
+       "elements": [
+          {
+             "media_type": "${2:<image|video>}",
+             "url": "${3:<FACEBOOK_URL>}"
+          }
+       ]
+    }
+  }    
+}
+]]></content>
+<tabTrigger>msg-tpl</tabTrigger>
+</snippet>

@@ -1,0 +1,29 @@
+<snippet>
+	<description>Messenger 2.2 Open Graph Template</description>
+	<content><![CDATA[
+"recipient":{
+  "id":"${1:USER_ID"
+},
+"message":{
+  "attachment":{
+    "type":"template",
+    "payload":{
+      "template_type":"open_graph}",
+      "elements":[
+         {
+          "url":"${2:https://open.spotify.com/track/7GhIk7Il098yCjg4BQjzvb}",
+          "buttons":[
+            {
+              "type":"${3:web_url}",
+              "url":"${4:https://en.wikipedia.org/wiki/Rickrolling}",
+              "title":"${5:View More}"
+            }              
+          ]      
+        }
+      ]
+    }
+  }
+}
+]]></content>
+<tabTrigger>msg-tpl</tabTrigger>
+</snippet>

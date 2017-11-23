@@ -1,0 +1,65 @@
+<snippet>
+	<description>Messenger 2.2 Receipt Template</description>
+	<content><![CDATA[
+"recipient":{
+  "id":"${1:<PSID>}"
+},
+"message":{
+  "attachment":{
+    "type":"template",
+    "payload":{
+      "template_type":"receipt",
+      "recipient_name":"${2:Stephane Crozatier}",
+      "order_number":"${3:12345678902}",
+      "currency":"${4:USD}",
+      "payment_method":"${5:Visa 2345}",        
+      "order_url":"${6:http://petersapparel.parseapp.com/order?order_id=123456}",
+      "timestamp":"${7:1428444852}",         
+      "address":{
+        "street_1":"${8:1 Hacker Way}",
+        "street_2":"${9:}",
+        "city":"${10:Menlo Park}",
+        "postal_code":"${11:94025}",
+        "state":"${12:CA}",
+        "country":"${13:US}"
+      },
+      "summary":{
+        "subtotal":${14:75.00},
+        "shipping_cost":${15:4.95},
+        "total_tax":${16:6.19},
+        "total_cost":${17:56.14}
+      },
+      "adjustments":[
+        {
+          "name":"${18:New Customer Discount}",
+          "amount":${19:20}
+        },
+        {
+          "name":"${20:\$10 Off Coupon}",
+          "amount":${21:10}
+        }
+      ],
+      "elements":[
+        {
+          "title":"${22:Classic White T-Shirt}",
+          "subtitle":"${23:100% Soft and Luxurious Cotton}",
+          "quantity":${24:2},
+          "price":${25:50},
+          "currency":"${26:USD}",
+          "image_url":"${27:http://petersapparel.parseapp.com/img/whiteshirt.png}"
+        },
+        {
+          "title":"${28:Classic Gray T-Shirt}",
+          "subtitle":"${29:100% Soft and Luxurious Cotton}",
+          "quantity":${30:1},
+          "price":${31:25},
+          "currency":"${32:USD}",
+          "image_url":"${33:http://petersapparel.parseapp.com/img/grayshirt.png}"
+        }
+      ]
+    }
+  }
+}
+]]></content>
+<tabTrigger>msg-tpl</tabTrigger>
+</snippet>

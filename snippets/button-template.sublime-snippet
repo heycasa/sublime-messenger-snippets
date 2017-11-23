@@ -1,0 +1,29 @@
+<snippet>
+	<description>Messenger 2.2 Button Template</description>
+	<content><![CDATA[
+"recipient":{
+  "id":"${1:<PSID>}"
+},
+"message":{
+  "attachment":{
+    "type":"template",
+    "payload":{
+      "template_type":"button",
+      "text":"${2:What do you want to do next?}",
+      "buttons":[
+        {
+          "type":"${3:web_url}",
+          "url":"${4:https://www.messenger.com}",
+          "title":"${5:Visit Messenger}"
+        },
+        {
+          ...
+        },
+        {...}
+      ]
+    }
+  }
+}
+]]></content>
+<tabTrigger>msg-tpl</tabTrigger>
+</snippet>

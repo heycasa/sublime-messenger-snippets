@@ -1,0 +1,42 @@
+<snippet>
+	<description>Messenger 2.2 Generic Template</description>
+	<content><![CDATA[
+"recipient":{
+  "id":"${1:PSID}"
+},
+"message":{
+  "attachment":{
+    "type":"template",
+    "payload":{
+      "template_type":"generic",
+      "elements":[
+         {
+          "title":"${2:Welcome to Peter\'s Hats}",
+          "image_url":"${3:https://petersfancybrownhats.com/company_image.png}",
+          "subtitle":"${4:We\'ve got the right hat for everyone.}",
+          "default_action": {
+            "type": "${5:web_url}",
+            "url": "${6:https://peterssendreceiveapp.ngrok.io/view?item=103}",
+            "messenger_extensions": ${7:true},
+            "webview_height_ratio": "${8:tall}",
+            "fallback_url": "${9:https://peterssendreceiveapp.ngrok.io/}"
+          },
+          "buttons":[
+            {
+              "type":"${10:web_url}",
+              "url":"${11:https://petersfancybrownhats.com}",
+              "title":"${12:View Website}"
+            },{
+              "type":"${13:postback}",
+              "title":"${14:Start Chatting}",
+              "payload":"${15:DEVELOPER_DEFINED_PAYLOAD}"
+            }              
+          ]      
+        }
+      ]
+    }
+  }
+}
+]]></content>
+<tabTrigger>msg-tpl</tabTrigger>
+</snippet>

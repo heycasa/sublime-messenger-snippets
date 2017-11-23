@@ -1,0 +1,75 @@
+<snippet>
+	<description>Messenger 2.2 List Template</description>
+	<content><![CDATA[
+"recipient":{
+  "id":"${1:RECIPIENT_ID}"
+}, 
+"message": {
+  "attachment": {
+    "type": "template",
+    "payload": {
+      "template_type": "list",
+      "top_element_style": "${2:compact}",
+      "elements": [
+        {
+          "title": "${3:Classic T-Shirt Collection}",
+          "subtitle": "${4:See all our colors}",
+          "image_url": "${5:https://peterssendreceiveapp.ngrok.io/img/collection.png}",          
+          "buttons": [
+            {
+              "title": "${6:View}",
+              "type": "${7:web_url}",
+              "url": "${8:https://peterssendreceiveapp.ngrok.io/collection}",
+              "messenger_extensions": ${9:true},
+              "webview_height_ratio": "${10:tall}",
+              "fallback_url": "${11:https://peterssendreceiveapp.ngrok.io/}"            
+            }
+          ]
+        },
+        {
+          "title": "${12:Classic White T-Shirt}",
+          "subtitle": "${13:See all our colors}",
+          "default_action": {
+            "type": "${14:web_url}",
+            "url": "${15:https://peterssendreceiveapp.ngrok.io/view?item=100}",
+            "messenger_extensions": ${16:true},
+            "webview_height_ratio": "${17:tall}",
+            "fallback_url": "${18:https://peterssendreceiveapp.ngrok.io/}"
+          }
+        },
+        {
+          "title": "${19:Classic Blue T-Shirt}",
+          "image_url": "${20:https://peterssendreceiveapp.ngrok.io/img/blue-t-shirt.png}",
+          "subtitle": "${21:100% Cotton, 200% Comfortable}",
+          "default_action": {
+            "type": "${22:web_url}",
+            "url": "${23:https://peterssendreceiveapp.ngrok.io/view?item=101}",
+            "messenger_extensions": ${24:true},
+            "webview_height_ratio": "${25:tall}",
+            "fallback_url": "${26:https://peterssendreceiveapp.ngrok.io/}"
+          },
+          "buttons": [
+            {
+              "title": "${27:Shop Now}",
+              "type": "${28:web_url}",
+              "url": "${29:https://peterssendreceiveapp.ngrok.io/shop?item=101}",
+              "messenger_extensions": ${30:true},
+              "webview_height_ratio": "${31:tall}",
+              "fallback_url": "${32:https://peterssendreceiveapp.ngrok.io/}"            
+            }
+          ]        
+        }
+      ],
+       "buttons": [
+        {
+          "title": "${33:View More}",
+          "type": "${34:postback}",
+          "payload": "${35:payload}"            
+        }
+      ]  
+    }
+  }
+}
+]]></content>
+<tabTrigger>msg-tpl</tabTrigger>
+</snippet>
