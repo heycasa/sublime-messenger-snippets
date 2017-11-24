@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg?style=for-the-badge)](https://github.com/heycasa/sublime-messenger-snippets)
+[![GitHub release](https://img.shields.io/github/issues/heycasa/sublime-messenger-snippets.svg?style=for-the-badge)](https://github.com/heycasa/sublime-messenger-snippets)
 [![GitHub issues](https://img.shields.io/github/issues/heycasa/sublime-messenger-snippets.svg?style=for-the-badge)](https://github.com/heycasa/sublime-messenger-snippets/issues)
 
 # Sublime Messenger Snippets
