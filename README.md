@@ -1,5 +1,5 @@
 [![GitHub release](https://img.shields.io/github/issues/heycasa/sublime-messenger-snippets.svg?style=for-the-badge)](https://github.com/heycasa/sublime-messenger-snippets)
-[![GitHub issues](https://img.shields.io/github/issues/heycasa/sublime-messenger-snippets.svg?style=for-the-badge)](https://github.com/heycasa/sublime-messenger-snippets/issues)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/heycasa/sublime-messenger-snippets.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fheycasa%2Fsublime-messenger-snippets)
 
 # Sublime Messenger Snippets
 Messenger payload snippets for Sublime Text
